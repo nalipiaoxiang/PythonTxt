@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "C:\\environment\\python\\Python39\\python.exe"
+    "python.pythonPath": "C:\\environment\\python\\Python39\\python.exe",
+    "editor.fontSize": 18,
+    "terminal.integrated.fontSize": 18
 }
