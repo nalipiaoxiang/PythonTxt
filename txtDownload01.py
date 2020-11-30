@@ -28,17 +28,29 @@ i=0
 for info in txt_info_list:
     info['size'] = txt_size_list[i]
     i+=1
+print(txt_info_list)
 
-print(len(txt_info_list))
-
+#去除小于3MB
 for info in txt_info_list:
     if info.get('size').endswith('KB'):
+        print(info)
         txt_info_list.remove(info)
-print('---------------------------')
-print(len(txt_info_list))
+print(txt_info_list)
+print('-----------------------------')
+for info in txt_info_list:
+    print(info)
+    if int(info.get('size').split('.')[0]) < 3:
+        print(info)
+        txt_info_list.remove(info)
+        continue
 
 
-# print(txt_info)
+
+
+# print(len(txt_info_list))
+
+
+print(txt_info_list)
 
 # for b in txt_size_list:
 #     print(b)
